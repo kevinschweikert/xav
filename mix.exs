@@ -55,7 +55,7 @@ defmodule Xav.MixProject do
   defp deps do
     [
       {:nx, "~> 0.7", optional: true},
-      {:elixir_make, "~> 0.7", runtime: false},
+      {:elixir_make, "~> 0.8", runtime: false},
 
       # dev/test
       # bumblebee and exla for testing speech to text
@@ -65,7 +65,8 @@ defmodule Xav.MixProject do
       {:excoveralls, "~> 0.18.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", runtime: false, only: :dev},
       {:credo, ">= 0.0.0", runtime: false, only: :dev},
-      {:dialyxir, ">= 0.0.0", runtime: false, only: :dev}
+      {:dialyxir, ">= 0.0.0", runtime: false, only: :dev},
+      {:zigler, "~> 0.13.2", runtime: false}
     ]
   end
 
